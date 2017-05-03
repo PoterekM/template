@@ -1,0 +1,14 @@
+.jumbotron{
+  text-align: center;
+  background-color: lightblue;
+}
+
+.well-1{
+  background-color: teal;
+  padding: 10px;
+  text-align: center;
+}
+
+body{
+  background-color: salmon;
+}
