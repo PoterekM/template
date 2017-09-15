@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { mapboxgl } from 'mapbox-gl';
 
 @Component({
   selector: 'app-root',
