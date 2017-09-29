@@ -1,20 +1,22 @@
 import * as types from "./../constants/ActionTypes";
-// 
-// export const requestGit = (user) => ({
-//   type: types.REQUEST_GIT,
-//   user
-// });
-//
-// export const showGit = (profile) => ({
-//   type: types.SHOW_GIT,
-//   profile
-// })
+import v4 from "uuid/v4";
+
+export const requestGit = (userId) => ({
+  type: types.REQUEST_GIT,
+  userId: userId
+});
+
+export const showGit = (profile, userId) => ({
+  type: types.SHOW_GIT,
+  profile,
+  userId
+})
 
 
-export function fetchProfile(user) {
+export function fetchProfile(dispatch) {
   return function (dispatch) {
-    const localSongId = v4();
-    user = user;
+    const userId = v4();
+    dispatch(requestGit(userId));
     return fetch("https://api.github.com/users/poterekm", {
       headers: {
         'Accept': 'application/vnd.github.v3+json'

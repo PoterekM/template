@@ -1,14 +1,19 @@
 import React from "react";
+import { connect } from "react-redux";
+import { fetchProfile } from "./../actions";
 
-
-function Portfolio () {
-
+const Portfolio = ({ dispatch, user }) => {
   return(
     <div>
-      <h1>Here are some projects I've been working on!</h1>
+      <button onClick={() => dispatch(fetchProfile())}>View Profile</button>
     </div>
-  )
-
+  );
 }
 
-export default Portfolio;
+const mapStateToProps = state => {
+  return {
+    profile: state
+  };
+};
+
+  export default connect(mapStateToProps)(Portfolio);
