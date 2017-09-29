@@ -1,4 +1,4 @@
-# Zissou Zoo Animal Tracker
+# Michelle Poterek Portfolio
 #### _Epicodus Advanced Topics In React: Week 4 Independent Project, September 29, 2017_
 _**By Michelle Poterek**_
 
@@ -9,6 +9,14 @@ This is my personal portfolio that uses React and the GitHub API in order to cre
 ## Installation
 You can visit the application through this link:
 
+Api call for user profile
+https://api.github.com/users/poterekm
+
+APi call for starred repository
+https://api.github.com/users/poterekm/starred
+
+Potentail api call for last year of git history
+https://api.github.com/repos/:owner/poterekm/stats/commit_activity
 
 OR:
 In Terminal,
@@ -20,20 +28,28 @@ In Terminal,
   * Visit the app at http://localhost:8080.
 
 ## User Story
-* A user should be able to go to the website and see projects the author is excited to share.
+* A user should be able to go to the website and see basic information listed on the webpage
+  * Name
+  * user location
+  * Github image.
 * A user should be able to navigate client-side routes in order to change views
-* A user should be able to see my commit history.
+  * Portfolio
+  * About me
+    * Projects that interest me
+  * Resume
+
 
 ### Wishlist
-* Extend the functionality of the app
+* A user should be able to see my commit history.
+* A user can see featured projects.
 * Add custom styling and animation.
 * Add resume to the application.
 
 ## Development Planning
 * Build application as presentational components initially.
-* Display API information to the user.
+* Display API information for my profile to the user.
 * Create Jest Tests.
-  * Check in and see how the user story is running and rethink functionality.
+  * Check in and see how the user story is running and ensure proper user-flow.
 * Style Application.
 
 ## Program Preview
